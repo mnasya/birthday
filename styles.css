@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #8dc273, #637a5d);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+.card {
+  background: #a0cd97;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  padding: 40px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #1a3511;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+button {
+  background-color: #114e29;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+button:hover {
+  background-color: #4c6154;
+}
+
+
+.heart {
+  position: absolute; /* чтобы сердечки позиционировались по всей странице */
+  font-size: 24px;
+  color: #8d0000;
+  opacity: 0.8;
+  animation: floatUp 3s linear forwards;
+  pointer-events: none; /* чтобы сердечки не мешали кликам по странице */
+}
+
+@keyframes floatUp {
+  to {
+    transform: translateY(-200px) scale(0.5);
+    opacity: 0;
+  }
+}
