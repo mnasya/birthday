@@ -4,7 +4,7 @@ function generateHearts() {
     heart.className = 'heart';
     heart.innerHTML = '❤️';
 
-    // Расположение по всей странице
+
     heart.style.left = Math.random() * 100 + 'vw';
     heart.style.top = Math.random() * 100 + 'vh';
 
@@ -20,3 +20,4 @@ function generateHearts() {
   }
 
 }
+
